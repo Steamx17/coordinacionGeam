@@ -34,7 +34,7 @@
 
             <div class="card-header">
 
-                <h4 class="card-title"> EVIDENCIA DE LA CLASE <b>{{ $clase->title }}</b> DEL GRUPO DE
+                <h4 class="card-title"> EVIDENCIA DE LA CLASE <b>{{ $clase->title }}</b> DEL
                     <b>{{ $nombreGrupo->name_group }}</b>
                 </h4>
 
@@ -53,7 +53,7 @@
                             $ext = pathinfo($i->url, PATHINFO_EXTENSION);
                         @endphp
 
-                        @if ($ext == 'jpg' || $ext == 'png' || $ext == 'jpeg' || $ext == 'svg')
+                        @if ($ext == 'jpg' || $ext == 'png' || $ext == 'jpeg')
 
                             <div class="col-sm-2">
                                 <a href="{{ $i->url }}" data-toggle="lightbox" data-title="Evidencia"
